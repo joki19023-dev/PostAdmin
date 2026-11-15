@@ -1,0 +1,29 @@
+{% extends 'posts/base.html' %}
+
+{% block title %}Publicaciones | Mi Blog{% endblock %}
+
+{% block content %}
+<section class="hero-header">
+    <h1>Publicaciones Recientes</h1>
+    <p>Artículos publicados dinámicamente desde la base de datos SQLite mediante el ORM de Django.</p>
+</section>
+
+<div class="posts-list">
+    {% for post in posts %}
+        <article class="card post-card">
+            <h2>{{ post.titulo }}</h2>
+            <p class="post-meta">
+                Por <strong>{{ post.autor }}</strong> · {{ post.fecha_creacion|date:"d/m/Y H:i" }}
+                · <span class="badge">{{ post.estado }}</span>
+            </p>
+            <div class="post-body">
+                <p>{{ post.contenido }}</p>
+            </div>
+        </article>
+    {% empty %}
+        <div class="card">
+            <p>No hay publicaciones disponibles en este momento.</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #1f2937;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.site-header {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-bottom: 3px solid #2563eb;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+.main-content {
+    flex: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-header {
+    margin-bottom: 1.5rem;
+}
+
+.hero-header h1 {
+    color: #0f172a;
+    font-size: 1.9rem;
+    margin-bottom: 0.35rem;
+}
+
+.hero-header p {
+    color: #475569;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+}
+
+.post-card h2 {
+    color: #0f172a;
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #166534;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: #374151;
+}
+
+.site-footer {
+    background-color: #e2e8f0;
+    color: #475569;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
